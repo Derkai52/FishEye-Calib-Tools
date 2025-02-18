@@ -61,6 +61,8 @@ rosrun camera_model Calibration --camera-name mycamera --input /home/xxx/ws_fish
 roslaunch fisheye_flattener flattener.launch
 ```
 
+如果有黑边，就[调整launch文件里面的FOV参数](./fishEyeFlattener/launch/flattener.launch)即可消除。
+
 左图是矫正后的图，右图原图：
 ![](undistortion_example.png)
 ## 引用参考
