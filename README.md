@@ -36,8 +36,7 @@ roslaunch calib_image_saver single_collect_image.launch
 填入对应参数并执行：
 
 ```bash
-rosrun camera_model Calibration --camera-name mycamera --input /home/xxx/ws_fisheye_calib_tools/src/fisheye_calib_tools/calib_image_saver/calibration_example_data -w 8
- -h 6 --size 400 --camera-model myfisheye --opencv true
+rosrun camera_model Calibration --camera-name mycamera --input /home/xxx/ws_fisheye_calib_tools/src/fisheye_calib_tools/calib_image_saver/calibration_example_data -w 8 -h 6 --size 400 --camera-model myfisheye --opencv true
 ```
 |   参数表    |  |
 | ----------- | ----------- |

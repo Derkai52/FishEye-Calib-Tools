@@ -9,7 +9,7 @@
     <param name="rotationVectorY" type="double" value="0"/> 
     <param name="rotationVectorZ" type="double" value="0"/> 
     <!-- FOV is in degree -->
-    <param name="fov" type="double" value="285"/> 
+    <param name="fov" type="double" value="283"/> 
     <!-- Image width for center reprojection -->
     <param name="imgWidth" type="int" value="600"/> 
   </node>
