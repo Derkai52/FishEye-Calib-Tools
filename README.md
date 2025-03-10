@@ -45,7 +45,7 @@ rosrun camera_model Calibration --camera-name mycamera --input /home/xxx/ws_fish
 | -w   | 棋盘格在宽方向的角点数（不含边界的）        |
 | -h  | 棋盘格在高方向的角点数（不含边界的）        |
 | --size   | 棋盘格单个格的边长（mm）        |
-| --camera-model   | 相机模型类型（Pinhole、Cata、Equidistant、Scaramuzza、Polynomial、FOV、myfisheye（默认自定义的））        |
+| --camera-model   | 相机模型类型（Pinhole、Cata、Equidistant、Scaramuzza、Polynomial（默认）、FOV）        |
 | -opencv   | 使用OpenCV的检测器（默认）        |
  
 
