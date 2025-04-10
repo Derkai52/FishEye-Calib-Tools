@@ -353,7 +353,7 @@ main( int argc, char** argv )
                 std::ostringstream ss;
                 ss << i;
                 cv::imwrite( result_images_save_folder + "calib_result_" + ss.str( )
-                             + ".jpg",
+                             + ".png",
                              calibration.m_ImagesGoodShow.at( i ) );
             }
             cv::waitKey( 0 );

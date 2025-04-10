@@ -58,7 +58,7 @@ showImage( cv::Mat& image, cv::Mat& image1, cv::Mat& _DistributedImage )
 
     cv::namedWindow( "DistributedImage", cv::WINDOW_NORMAL );
     cv::Mat display_img;
-    cv::resize(_DistributedImage, display_img, cv::Size(2560 , 1440), 0, 0, cv::INTER_LINEAR);
+    cv::resize(_DistributedImage, display_img, cv::Size(1280 , 720), 0, 0, cv::INTER_LINEAR);
     cv::imshow( "DistributedImage", display_img );
     cv::waitKey( 1000 / max_freq );
 }
@@ -177,14 +177,14 @@ process( )
         std::stringstream ss_num;
         ss_num << image_count;
         std::string image_file_left
-        = image_path + "/" + image_name_left + ss_num.str( ) + ".jpg";
+        = image_path + "/" + image_name_left + ss_num.str( ) + ".png";
         std::string image_file_right
-        = image_path + "/" + image_name_right + ss_num.str( ) + ".jpg";
+        = image_path + "/" + image_name_right + ss_num.str( ) + ".png";
 
         std::cout << "#[INFO] Get chessboard image, left: "
-                  << image_name_left + ss_num.str( ) + ".jpg" << std::endl;
+                  << image_name_left + ss_num.str( ) + ".png" << std::endl;
         std::cout << "                              right: "
-                  << image_name_right + ss_num.str( ) + ".jpg" << std::endl;
+                  << image_name_right + ss_num.str( ) + ".png" << std::endl;
 
         cv::imwrite( image_file_left, image_left );
         cv::imwrite( image_file_right, image_right );
@@ -270,7 +270,7 @@ main( int argc, char** argv )
     //    ros::spin( );
 
     cv::imwrite( image_path + "/" + "Distributed.jpg", DistributedImage );
-    std::cout << "#[INFO] Get chessboard iamges: " << image_count << std::endl;
+    std::cout << "#[INFO] Get chessboard images: " << image_count << std::endl;
 
     return 0;
 }

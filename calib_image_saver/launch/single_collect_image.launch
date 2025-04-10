@@ -1,7 +1,7 @@
 <launch>
     <node pkg="calib_image_saver" type="singleImageSaver" name="saver" output="screen">
         <remap from="/image_input" to="/hik_camera_2/image"/>
-        <param name="image_path" type="string" value="/home/tk/ws_fisheye_calib_tools/src/fisheye_calib_tools/calib_image_saver/calibration_example_data"/>
+        <param name="image_path" type="string" value="/home/emnavi/ws_xfeatvins/src/fisheye_calib_tools/calib_image_saver/calibration_example_data"/>
         <param name="image_name" type="string" value="left-"/>
         <param name="rate" type="int" value="9"/>
         <param name="board_width" type="int" value="8"/>

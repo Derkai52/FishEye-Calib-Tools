@@ -44,7 +44,7 @@ showImage( cv::Mat& image, cv::Mat& _DistributedImage )
 
     cv::namedWindow( "DistributedImage", cv::WINDOW_NORMAL );
     cv::Mat display_img;
-    cv::resize(_DistributedImage, display_img, cv::Size(2560 , 1440), 0, 0, cv::INTER_LINEAR);
+    cv::resize(_DistributedImage, display_img, cv::Size(1280 , 720), 0, 0, cv::INTER_LINEAR);
     cv::imshow( "DistributedImage", display_img );
     cv::waitKey( 1000 / max_freq );
 }
@@ -204,8 +204,8 @@ main( int argc, char** argv )
 
     ros::spin( );
 
-    cv::imwrite( image_path + "/" + "Distributed.png", DistributedImage );
-    std::cout << "#[INFO] Get chessboard iamges: " << image_count << std::endl;
+    cv::imwrite( image_path + "/" + "Distributed.jpg", DistributedImage );
+    std::cout << "#[INFO] Get chessboard images: " << image_count << std::endl;
 
     return 0;
 }
