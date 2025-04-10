@@ -1,10 +1,8 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.16)
 project(fisheye_flattener)
 
-# Compile as C++11, supported in ROS Kinetic and newer
-add_compile_options(-std=c++17)
 set(CMAKE_BUILD_TYPE "Debug")
-set(CMAKE_CXX_FLAGS "-march=native -fopenmp")
+set(CMAKE_CXX_FLAGS "-std=c++14 -march=native -fopenmp")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -fPIC -fopenmp")
 
 
